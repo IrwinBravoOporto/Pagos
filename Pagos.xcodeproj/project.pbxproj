@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946359CE43CEDD80544E4333 /* Pods_Pagos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64D033B2B627BF0B8136EC4 /* Pods_Pagos.framework */; };
 		FD4D2C0729E9E47C00F525D3 /* Pagos.h in Headers */ = {isa = PBXBuildFile; fileRef = FD4D2C0629E9E47C00F525D3 /* Pagos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6B865E29EDE79A00EE1F77 /* TestPagos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B865D29EDE79A00EE1F77 /* TestPagos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DCD09306EBE0F67A9097252 /* Pods-Pagos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.debug.xcconfig"; path = "Target Support Files/Pods-Pagos/Pods-Pagos.debug.xcconfig"; sourceTree = "<group>"; };
+		5469B71E27F8BFBDCD08E359 /* Pods-Pagos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.release.xcconfig"; path = "Target Support Files/Pods-Pagos/Pods-Pagos.release.xcconfig"; sourceTree = "<group>"; };
+		624C0D455DD930FE1389BD44 /* Pods-Rimac-Pagos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-Pagos.release.xcconfig"; path = "Target Support Files/Pods-Rimac-Pagos/Pods-Rimac-Pagos.release.xcconfig"; sourceTree = "<group>"; };
+		E64D033B2B627BF0B8136EC4 /* Pods_Pagos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pagos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC7E1065B75EA52B9D74506 /* Pods-Rimac-Pagos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-Pagos.debug.xcconfig"; path = "Target Support Files/Pods-Rimac-Pagos/Pods-Rimac-Pagos.debug.xcconfig"; sourceTree = "<group>"; };
 		FD4D2C0329E9E47C00F525D3 /* Pagos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pagos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4D2C0629E9E47C00F525D3 /* Pagos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pagos.h; sourceTree = "<group>"; };
+		FD6B865D29EDE79A00EE1F77 /* TestPagos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPagos.swift; sourceTree = "<group>"; };
+		FD6B866629EDEF7600EE1F77 /* Stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +29,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946359CE43CEDD80544E4333 /* Pods_Pagos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312CFFA733ED89D09EC61FE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBC7E1065B75EA52B9D74506 /* Pods-Rimac-Pagos.debug.xcconfig */,
+				624C0D455DD930FE1389BD44 /* Pods-Rimac-Pagos.release.xcconfig */,
+				2DCD09306EBE0F67A9097252 /* Pods-Pagos.debug.xcconfig */,
+				5469B71E27F8BFBDCD08E359 /* Pods-Pagos.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		3A4F2758B950B3B0E43F47C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B866629EDEF7600EE1F77 /* Stripe.framework */,
+				E64D033B2B627BF0B8136EC4 /* Pods_Pagos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD4D2BF929E9E47C00F525D3 = {
 			isa = PBXGroup;
 			children = (
 				FD4D2C0529E9E47C00F525D3 /* Pagos */,
 				FD4D2C0429E9E47C00F525D3 /* Products */,
+				312CFFA733ED89D09EC61FE1 /* Pods */,
+				3A4F2758B950B3B0E43F47C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4D2C0629E9E47C00F525D3 /* Pagos.h */,
+				FD6B865D29EDE79A00EE1F77 /* TestPagos.swift */,
 			);
 			path = Pagos;
 			sourceTree = "<group>";
@@ -68,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD4D2C0A29E9E47C00F525D3 /* Build configuration list for PBXNativeTarget "Pagos" */;
 			buildPhases = (
+				A3C47B7F8822C611B1F77C58 /* [CP] Check Pods Manifest.lock */,
 				FD4D2BFE29E9E47C00F525D3 /* Headers */,
 				FD4D2BFF29E9E47C00F525D3 /* Sources */,
 				FD4D2C0029E9E47C00F525D3 /* Frameworks */,
@@ -93,6 +128,7 @@
 				TargetAttributes = {
 					FD4D2C0229E9E47C00F525D3 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -124,11 +160,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3C47B7F8822C611B1F77C58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pagos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD4D2BFF29E9E47C00F525D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6B865E29EDE79A00EE1F77 /* TestPagos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +319,9 @@
 		};
 		FD4D2C0B29E9E47C00F525D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCD09306EBE0F67A9097252 /* Pods-Pagos.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -268,6 +332,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,15 +342,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abletoaid.Pagos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FD4D2C0C29E9E47C00F525D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5469B71E27F8BFBDCD08E359 /* Pods-Pagos.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -296,6 +367,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,9 +377,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abletoaid.Pagos;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
