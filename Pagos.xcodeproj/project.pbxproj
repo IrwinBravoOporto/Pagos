@@ -13,8 +13,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DCD09306EBE0F67A9097252 /* Pods-Pagos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.debug.xcconfig"; path = "Target Support Files/Pods-Pagos/Pods-Pagos.debug.xcconfig"; sourceTree = "<group>"; };
-		5469B71E27F8BFBDCD08E359 /* Pods-Pagos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.release.xcconfig"; path = "Target Support Files/Pods-Pagos/Pods-Pagos.release.xcconfig"; sourceTree = "<group>"; };
+		2DCD09306EBE0F67A9097252 /* Pods-Pagos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.debug.xcconfig"; path = "../Rimac/Pods/Target Support Files/Pods-Pagos/Pods-Pagos.debug.xcconfig"; sourceTree = "<group>"; };
+		5469B71E27F8BFBDCD08E359 /* Pods-Pagos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pagos.release.xcconfig"; path = "../Rimac/Pods/Target Support Files/Pods-Pagos/Pods-Pagos.release.xcconfig"; sourceTree = "<group>"; };
 		624C0D455DD930FE1389BD44 /* Pods-Rimac-Pagos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-Pagos.release.xcconfig"; path = "Target Support Files/Pods-Rimac-Pagos/Pods-Rimac-Pagos.release.xcconfig"; sourceTree = "<group>"; };
 		E64D033B2B627BF0B8136EC4 /* Pods_Pagos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pagos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC7E1065B75EA52B9D74506 /* Pods-Rimac-Pagos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-Pagos.debug.xcconfig"; path = "Target Support Files/Pods-Rimac-Pagos/Pods-Rimac-Pagos.debug.xcconfig"; sourceTree = "<group>"; };
